@@ -906,7 +906,7 @@ cat >/etc/cron.d/xp_all <<-END
 		SHELL=/bin/sh
 		PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 		2 0 * * * root /usr/local/sbin/xp
-                2 0 * * * root /usr/local/sbin/xp-hour
+                10 * * * * root /usr/local/sbin/xp-hour
 	END
 	cat >/etc/cron.d/logclean <<-END
 		SHELL=/bin/sh
